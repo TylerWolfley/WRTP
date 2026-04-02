@@ -607,17 +607,27 @@ p { max-width: var(--text-w); }
 .editorial-split-text h2 { margin-bottom: var(--space-sm); }
 .editorial-split-text p { margin-bottom: var(--space-sm); }
 
-.editorial-photo-card {
+
   aspect-ratio: 4 / 5;
-  overflow: hidden;
-  border-radius: calc(var(--radius-lg) - 0.4rem);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 252, 247, 0.68);
+}
+
+.editorial-photo {
+  margin: 0;
+}
+
+.editorial-photo img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 0.35rem);
   box-shadow: var(--shadow-lg);
 }
 
-.editorial-split-image .img-placeholder {
-  aspect-ratio: 4 / 5;
+.editorial-photo figcaption {
+  margin-top: var(--space-xs);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .practical-note {
