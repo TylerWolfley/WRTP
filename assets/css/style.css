@@ -33,9 +33,6 @@
 
   --transition:  0.2s ease;
   --hero-fade-height: 9rem;
-  --band-art-glow-x: 25%;
-  --band-art-glow-y: 20%;
-  --band-art-glow-size: 22%;
   --band-art-stripe-size: 18px;
 }
 
@@ -515,12 +512,6 @@ p { max-width: var(--text-w); }
 
 .band-art-photo {
   background: linear-gradient(180deg, rgba(255, 250, 242, 0.22), rgba(31, 26, 22, 0.08));
-}
-
-.band-art-jewelry {
-  background:
-    radial-gradient(circle at var(--band-art-glow-x) var(--band-art-glow-y), rgba(255, 241, 223, 0.5), transparent var(--band-art-glow-size)),
-    linear-gradient(160deg, #8d6a4a, #402f22);
 }
 
 .band-art-textiles {
