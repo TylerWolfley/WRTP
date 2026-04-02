@@ -665,6 +665,26 @@ p { max-width: var(--text-w); }
   aspect-ratio: 3 / 4;
 }
 
+.gallery-photo {
+  margin: 0;
+}
+
+.gallery-section-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 0.35rem);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-photo figcaption {
+  margin-top: var(--space-xs);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .gallery-section-text h2 { margin-bottom: var(--space-sm); }
 .gallery-section-text p { color: var(--muted); }
 
