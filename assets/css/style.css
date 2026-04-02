@@ -704,6 +704,14 @@ p { max-width: var(--text-w); }
 .story-section-text h2 { margin-bottom: var(--space-sm); }
 .story-section-text p { color: var(--muted); }
 
+.story-section-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
 .story-section-image .img-placeholder {
   aspect-ratio: 4 / 3;
 }
