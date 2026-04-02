@@ -505,6 +505,18 @@ p { max-width: var(--text-w); }
   margin-bottom: var(--space-xs);
 }
 
+.band-art img,
+.editorial-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.band-art-photo {
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.22), rgba(31, 26, 22, 0.08));
+}
+
 .band-art-jewelry {
   background:
     radial-gradient(circle at var(--band-art-glow-x) var(--band-art-glow-y), rgba(255, 241, 223, 0.5), transparent var(--band-art-glow-size)),
@@ -603,6 +615,15 @@ p { max-width: var(--text-w); }
 .editorial-split-text .label { margin-bottom: var(--space-sm); }
 .editorial-split-text h2 { margin-bottom: var(--space-sm); }
 .editorial-split-text p { margin-bottom: var(--space-sm); }
+
+.editorial-photo-card {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: calc(var(--radius-lg) - 0.4rem);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 252, 247, 0.68);
+  box-shadow: var(--shadow-lg);
+}
 
 .editorial-split-image .img-placeholder {
   aspect-ratio: 4 / 5;
