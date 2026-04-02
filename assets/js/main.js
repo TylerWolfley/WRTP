@@ -1,4 +1,4 @@
-/* assets/js/main.js — Wind River Trading Co */
+/* assets/js/main.js — Wind River Trading Post */
 (function () {
   'use strict';
 
