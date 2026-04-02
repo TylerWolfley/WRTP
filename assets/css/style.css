@@ -31,6 +31,11 @@
   --text-w:      680px;
 
   --transition:  0.2s ease;
+  --hero-fade-height: 9rem;
+  --band-art-glow-x: 25%;
+  --band-art-glow-y: 20%;
+  --band-art-glow-size: 22%;
+  --band-art-stripe-size: 18px;
 }
 
 /* ── Reset / base ────────────────────────────────────────── */
@@ -284,7 +289,7 @@ p { max-width: var(--text-w); }
   content: "";
   position: absolute;
   inset: auto 0 0;
-  height: 9rem;
+  height: var(--hero-fade-height);
   background: linear-gradient(180deg, rgba(243, 237, 227, 0) 0%, rgba(243, 237, 227, 0.85) 100%);
   pointer-events: none;
 }
@@ -350,8 +355,8 @@ p { max-width: var(--text-w); }
 
 .home-hero-aside {
   align-self: end;
-  background: rgba(22, 17, 13, 0.72);
-  color: rgba(255, 252, 247, 0.92);
+  background: rgba(16, 12, 9, 0.84);
+  color: #fffaf3;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
@@ -372,7 +377,7 @@ p { max-width: var(--text-w); }
 }
 
 .home-hero-aside p {
-  color: rgba(255, 248, 240, 0.78);
+  color: rgba(255, 248, 240, 0.88);
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
@@ -498,14 +503,19 @@ p { max-width: var(--text-w); }
 
 .band-art-jewelry {
   background:
-    radial-gradient(circle at 25% 20%, rgba(255, 241, 223, 0.5), transparent 22%),
+    radial-gradient(circle at var(--band-art-glow-x) var(--band-art-glow-y), rgba(255, 241, 223, 0.5), transparent var(--band-art-glow-size)),
     linear-gradient(160deg, #8d6a4a, #402f22);
 }
 
 .band-art-textiles {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent 35%),
-    repeating-linear-gradient(135deg, #8d5b47 0 18px, #d2a777 18px 36px, #5a4036 36px 54px);
+    repeating-linear-gradient(
+      135deg,
+      #8d5b47 0 var(--band-art-stripe-size),
+      #d2a777 var(--band-art-stripe-size) calc(var(--band-art-stripe-size) * 2),
+      #5a4036 calc(var(--band-art-stripe-size) * 2) calc(var(--band-art-stripe-size) * 3)
+    );
 }
 
 .band-art-artwork {
