@@ -12,7 +12,8 @@
   --accent-soft: #ccb191;
   --border:      rgba(31, 26, 22, 0.12);
   --img-bg:      #d8cfc4;
-  --surface:     rgba(255, 252, 247, 0.82);
+  --surface-rgb: 255, 252, 247;
+  --surface:     rgba(var(--surface-rgb), 0.82);
   --surface-strong: #fbf7f1;
   --shadow-lg:   0 24px 60px rgba(31, 26, 22, 0.12);
   --radius-md:   1.25rem;
@@ -314,7 +315,7 @@ p { max-width: var(--text-w); }
 
 .home-hero-panel {
   max-width: 40rem;
-  background: rgba(255, 252, 247, 0.74);
+  background: rgba(var(--surface-rgb), 0.74);
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: var(--radius-lg);
   padding: clamp(1.25rem, 3vw, 2rem);
@@ -342,7 +343,7 @@ p { max-width: var(--text-w); }
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-top: 1.25rem;
+  margin-top: var(--space-sm);
 }
 
 .home-hero-highlights li {
