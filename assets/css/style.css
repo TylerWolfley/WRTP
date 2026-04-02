@@ -286,8 +286,13 @@ p { max-width: var(--text-w); }
   flex-wrap: wrap;
 }
 
-.home-hero-image .img-placeholder {
+.home-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
 }
 
 /* ── Identity block ──────────────────────────────────────── */
